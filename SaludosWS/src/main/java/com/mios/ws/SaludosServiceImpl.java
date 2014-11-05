@@ -13,4 +13,9 @@ public class SaludosServiceImpl implements SaludosService {
 	public String buenosDias(String nombre) {
 		return "Buenos dias Sr/Sra "+nombre;
 	}
+	
+	@WebMethod
+	public String buenosDiasNumero(int numero) {
+		return "Buenos dias Numero "+numero;
+	}
 }
