@@ -16,6 +16,9 @@ public class SaludosServiceImpl implements SaludosService {
 	
 	@WebMethod
 	public String buenosDiasNumero(int numero) {
+		if (numero == 0)
+			throw new RuntimeException("El numero cero no se permite");
+		
 		return "Buenos dias Numero "+numero;
 	}
 }
